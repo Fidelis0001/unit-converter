@@ -14,7 +14,6 @@ const volumeResult = document.getElementById("volume-result");
 const inputBtn = document.getElementById("input-btn");
 
 inputBtn.addEventListener("click", function () {
-  console.log(input.value);
   massResult.innerText = `${input.value} kg = ${(
     input.value * massUnit
   ).toFixed(3)} lb | ${input.value} lb = ${(input.value / massUnit).toFixed(
@@ -31,13 +30,3 @@ inputBtn.addEventListener("click", function () {
     3
   )} l`;
 });
-
-//   "meters = " +
-//   x * massUnit +
-//   " pounds | " +
-//   x / massUnit +
-//   " kg";
-// // distanceResult.textContent =
-//    * distanceUnit + " feet | " +  / distanceUnit + " meters";
-// volumeResult.textContent =
-//    * volumeUnit + " gallons | " +  / volumeUnit + " liters";
